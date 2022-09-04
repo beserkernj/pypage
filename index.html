@@ -7,15 +7,17 @@
     <script src=’index.js’ defer></script>
   </head>
   <body>
-    <div id=’rick-and-morty-characters’></div>
+      <div id=’rick-and-morty-characters’>
+          showCharacters = characters => {
+        const charactersDiv = document.querySelector(‘#rick-and-morty-  characters’);
+        characters.forEach(character => {
+          const characterElement = document.createElement(‘p’);
+          characterElement.innerText = `Character Name: ${character.name}`;
+          charactersDiv.append(characterElement);
+        });
+      }
+    </div>
   </body>
 </html>
 
-showCharacters = characters => {
-  const charactersDiv = document.querySelector(‘#rick-and-morty-  characters’);
-  characters.forEach(character => {
-    const characterElement = document.createElement(‘p’);
-    characterElement.innerText = `Character Name: ${character.name}`;
-    charactersDiv.append(characterElement);
-  });
-}
+
