@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-      scale=1.0">
-    <title>Rick and Morty Data</title>
-    <script src=’index.js’ defer></script>
+    <meta charset="UTF-8" />
+    <title>Random Cocktail Recipe</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div id=’rick-and-morty-characters’>
-      showCharacters = characters => {
-        const charactersDiv = document.querySelector(‘#rick-and-morty-  characters’);
-        characters.forEach(character => {
-          const characterElement = document.createElement(‘p’);
-          characterElement.innerText = `Character Name: ${character.name}`;
-          charactersDiv.append(characterElement);
-        });
-      }
-    </div>
+    <div id="cocktail"></div>
+    <div id="overlay"></div>
+    <script src="script.js"></script>
   </body>
 </html>
 
